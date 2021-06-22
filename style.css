@@ -5,6 +5,7 @@ body {
     background-image:url("Untitled.png");
     background-repeat: no-repeat;
     background-size: 100% 350px;
+    text-align: center;
 }
 
 
@@ -1734,4 +1735,18 @@ ul {
     margin: 0 auto;
     height: 350px;
     border-radius: 15px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .fpvVideo {
+        height: auto;
+        width: 100%;
+        border-radius: 0px;
+    }
+  }
+
+  @media screen and (max-width: 417px) {
+    .map{
+        width: 100%;
+    }
   }
