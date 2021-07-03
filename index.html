@@ -91,7 +91,33 @@ body {font-family: "Lato", sans-serif}
   <a href="#ll"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
   <p class="w3-medium">Made by Tim Fredriksson</p>
 </footer>
+<!-- Messenger Pluginprogram för chatt Code -->
+<div id="fb-root"></div>
 
+<!-- Your Pluginprogram för chatt code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "282811931807065");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 <script>
 
 // Used to toggle the menu on small screens when clicking on the menu button
