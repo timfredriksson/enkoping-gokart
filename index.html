@@ -7,83 +7,91 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+  body {
+    font-family: "Lato", sans-serif
+  }
+
+  .mySlides {
+    display: none
+  }
 </style>
+
 <body>
-  
 
-<!-- Messenger Pluginprogram för chatt Code -->
-<div id="fb-root"></div>
 
-<!-- Your Pluginprogram för chatt code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
+  <!-- Messenger Pluginprogram för chatt Code -->
+  <div id="fb-root"></div>
 
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "282811931807065");
-  chatbox.setAttribute("attribution", "biz_inbox");
-
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v11.0'
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Hem</a>
-    <a href="#priser" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Priser
-    </a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Kontakt</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Öppet tider</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  <!-- Your Pluginprogram för chatt code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
   </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#priser" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Priser</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kontakt</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Öppet tider</a>
-</div>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "282811931807065");
+    chatbox.setAttribute("attribution", "biz_inbox");
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v11.0'
+      });
+    };
 
-  <!-- Automatic Slideshow Images -->
-  <a href="https://youtu.be/LxkMcogV7Cw"><video class="fpvVideo" autoplay muted>
-    <source src="File transfer.mp4" type="video/mp4">
-    <source src="movie.ogg" type="video/ogg">
-    Your browser does not support the video tag.
-  </video></a>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Hem</a>
+      <a href="#priser" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Priser
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Kontakt</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Öppet tider</a>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+          class="fa fa-search"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#priser" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Priser</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Kontakt</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Öppet tider</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <a href="https://youtu.be/LxkMcogV7Cw"><video class="fpvVideo" autoplay muted>
+        <source src="File transfer.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video></a>
 
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="priser">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Priser</h2>
-      <p class="w3-center">--- drop in ---</p>
-      <h4 class="w3-wide w3-bold w3-center">10 minuter 160kr</h4>
-      <h4 class="w3-bold w3-wide w3-center">3 X 10 minuter 400kr</h4>
-      <p class="w3-center">--- Bokning/paket ---</p>
-      <h4 class="w3-wide w3-bold w3-center">F1 360 kr (tidskval 8min, final 10 varv)</h4>
-      <h4 class="w3-wide w3-bold w3-center">F2 460kr (tidskval 10 min, Final 14 varv)</h4>
-      <h4 class="w3-wide w3-bold w3-center">F3 560kr (träning 8 min, tidskval 8 min, final 12 varv)</h4>
-      <p class="w3-center">--- Om du bokar F3 paketet så finns möjlighet till drönarfilm av finalen ---</p>
+    <!-- The Tour Section -->
+    <div class="w3-black" id="priser">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">Priser</h2>
+        <p class="w3-center">--- drop in ---</p>
+        <h4 class="w3-wide w3-bold w3-center">10 minuter 160kr</h4>
+        <h4 class="w3-bold w3-wide w3-center">3 X 10 minuter 400kr</h4>
+        <p class="w3-center">--- Bokning/paket ---</p>
+        <h4 class="w3-wide w3-bold w3-center">F1 360 kr (tidskval 8min, final 10 varv)</h4>
+        <h4 class="w3-wide w3-bold w3-center">F2 460kr (tidskval 10 min, Final 14 varv)</h4>
+        <h4 class="w3-wide w3-bold w3-center">F3 560kr (träning 8 min, tidskval 8 min, final 12 varv)</h4>
+        <p class="w3-center">--- Om du bokar F3 paketet så finns möjlighet till drönarfilm av finalen ---</p>
       </div>
     </div>
   </div>
@@ -97,48 +105,51 @@ body {font-family: "Lato", sans-serif}
         <i class="fa fa-map-marker w3-center" style="width:30px"></i>ENKÖPING TÄRBY 20 <br> 745 95 Enköping<br>
         <i class="fa fa-phone w3-center" style="width:30px"></i>Tel. 073-935 22 11<br>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d258326.9134596788!2d17.024422861662668!3d59.61338154702733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x465e501e8e77feaf%3A0x498c8136ee9f1d8b!2senk%C3%B6ping%20hyrkart!3m2!1d59.653929899999994!2d17.051851499999998!5e0!3m2!1ssv!2sse!4v1624326337592!5m2!1ssv!2sse" width="400" height="450" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d258326.9134596788!2d17.024422861662668!3d59.61338154702733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x465e501e8e77feaf%3A0x498c8136ee9f1d8b!2senk%C3%B6ping%20hyrkart!3m2!1d59.653929899999994!2d17.051851499999998!5e0!3m2!1ssv!2sse!4v1624326337592!5m2!1ssv!2sse"
+        width="400" height="450" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-    <h2 class="w3-wide w3-center">Öppet tider (stängt vecka 27)</h2>
-    <ul>
-      <li>Måndag Stängt</li>
-      <li>Tisdag 11-21</li>
-      <li>Onsdag 13-18</li>
-      <li>Torsdag 11-21</li>
-      <li>Fredag 11-21</li>
-      <li>Lördag 14-21</li>
-      <li>Söndag 14-21</li>
-    </ul>
-<!-- End Page Content -->
-</div>
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.facebook.com/EnkopingHyrkart"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="#ll"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
-  <p class="w3-medium">Made by Tim Fredriksson</p>
-</footer>
+      <h2 class="w3-wide w3-center">Öppet tider (stängt vecka 27)</h2>
+      <ul>
+        <li>Måndag Stängt</li>
+        <li>Tisdag 11-21</li>
+        <li>Onsdag 13-18</li>
+        <li>Torsdag 11-21</li>
+        <li>Fredag 11-21</li>
+        <li>Lördag 14-21</li>
+        <li>Söndag 14-21</li>
+      </ul>
+      <!-- End Page Content -->
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="https://www.facebook.com/EnkopingHyrkart"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="#ll"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+      <p class="w3-medium">Made by Tim Fredriksson</p>
+    </footer>
 
 
-<script>
+    <script>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+      // When the user clicks anywhere outside of the modal, close it
+      var modal = document.getElementById('ticketModal');
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
 
 </body>
+
 </html>
