@@ -1,13 +1,12 @@
 html {
     height: 100%
 }
-body {
-    background-image:url("Untitled.png");
-    background-repeat: no-repeat;
-    background-size: 100% 350px;
-    text-align: center;
-}
 
+.toplist {
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Fjalla One', sans-serif;
+}
 
 html {
     box-sizing: border-box
